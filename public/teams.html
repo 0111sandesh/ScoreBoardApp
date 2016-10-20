@@ -1,0 +1,39 @@
+<h2>Teams</h2>
+<div>
+  <input type="text" placeholder="team" ng-model="team">
+  <button type="button" ng-click="addTeam()">Add Team</button>
+</div>
+<hr>
+<div>
+  <input type="text" placeholder="team" ng-model="teamName">
+	<input type="text" placeholder="member" ng-model="memberName">
+	<input type="text" placeholder="sample@email.com" ng-model="memberEmail">
+	<button type="button" ng-click="addMember()">Add Member</button>
+</div>
+
+<hr>
+
+<div ng-repeat="team in teams">
+<table class="table table-striped">
+  <tr>
+    <th colspan="2" bgcolor="#339CFF"><center>{{team.team}}</center></th>
+  </tr>
+  <tr>
+    <th>Members</th> 
+    <th>Email</th>
+  </tr>
+  <tr ng-repeat="member in team.members">
+    <td>
+    	<h4>
+			{{member.name}}
+		</h4>
+    </td>
+    <td>
+    	<h4>
+			{{member.email}}
+		</h4>
+    </td> 
+  </tr>
+</table>
+<hr>
+</div>

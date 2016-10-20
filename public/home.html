@@ -1,0 +1,63 @@
+<!-- <div class="row feed">
+		<div class="col-md-4">
+			<div ng-hide="currentUser">
+				<h4>Login:</h4>
+				<br><br>
+				<input type="text" size="30" placeholder="username" ng-model="username">
+				<br><br>
+				<input type="password" size="30" placeholder="password" ng-model="password">
+				<br><br>
+				<button type="button" ng-click="signin()">Sign In</button>
+				<br><br>
+				<a href="#/signup">Not a member? Signup</a>
+			</div>
+			<div ng-show="currentUser">
+				Hello, {{currentUser}}.
+				<br><br>
+				<a href ng-click="logout()">Logout</a>
+			</div>
+		</div>
+		<div class="col-md-8">
+			<div class="new-meow" ng-show="currentUser">
+			<input type="next" class="form-control" ng-model="newMeow" placeholder="What do you have to meow today?">
+			<button class="btn" type="button" ng-click="submitNewMeow()">Submit</button>
+			</div>
+			<h3 ng-repeat="meow in meows">
+				<span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+				{{meow.text}}
+				<a href ng-click="removeMeow(meow)"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></a>
+				<br>
+				<small>{{meow.username}}</small>
+			</h3>
+		</div>
+</div> -->
+<hr>
+<br>
+ <div class="jumbotron">
+            <div class="container">
+                <h1 class="display-3">Hackathon Directory</h1>
+            </div>
+        </div>
+    <div class="container">
+         <div class="row">
+            <div class="col-md-4">
+                  <h2>Scoreboard</h2>
+
+                  <p>Create a tool that judges can log into in order to provide daily feedback and scores.</p>
+
+                  <p><a class="btn btn-primary" href="#/scoreboard1" role="button">View</a></p>
+            </div>
+            <div class="col-md-4">
+                  <h2>Feedback Dashboard</h2>
+                  <p>Create a feedback system for delivering feedbacks quickly and easily.</p>
+                  <p><a class="btn btn-primary" href="#/scoreboard2" role="button">View</a></p>
+            </div>
+           <div class="col-md-4">
+                  <h2>DevOps Dashboard</h2>
+                  <p>Create a DevOps dashboard for pipelining the process of application development.</p>
+                  <p><a class="btn btn-primary" href="#/scoreboard3" role="button">View</a></p>
+           </div>
+        </div>
+    </div>
+
+         

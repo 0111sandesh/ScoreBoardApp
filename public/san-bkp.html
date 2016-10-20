@@ -1,0 +1,64 @@
+
+<h2>Scoreboard for Part 1</h2>
+<hr>
+
+<div ng-repeat="scoreObject in scoreBoard1 | orderBy:'team'">
+<table class="table table-striped" border="2">
+  <tr>
+    <th colspan="6" bgcolor="#339CFF"><center>{{scoreObject.team}}</center></th>
+  </tr>
+  <tr>
+    <th>Criteria</th> 
+    <th>Round1</th> 
+    <th>Round2</th>
+    <th>Round3</th> 
+    <th>Final</th>
+    <th>Total</th>
+  </tr>
+  <tr>ng-repeat="scoreData in scoreObject.teamData">
+    <td>{{scoreData.criteria}} <br>{{scoreData.judge}}</td>
+    
+    <td>    
+      <div>
+        <!-- Trigger the modal with a button -->
+        <button id="scoreVal" type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal" title="{{scoreData.comment}}">
+        {{scoreData.r1}}
+        </button> 
+
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" role="dialog">
+          <div class="modal-dialog">
+          
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Score</h4>
+              </div>
+              <div class="modal-body">
+                  <p>Few notes about the judging criteria : {{scoreData.criteria}}</p>
+                  <div>
+                    <input type="text" name="score" id="score" placeholder="Score">
+                    <textarea rows="4" cols="50" placeholder="Comment" id="comment"></textarea>
+                  </div>
+                
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal" onclick="changeVal()">Save</button>
+              </div>
+            </div>
+            
+          </div>
+        </div>  
+      </div>
+    </td> 
+    <td title="Great job on the UX/UI">2</td> 
+    <td title="Great job on the UX/UI">3</td> 
+    <td title="Great job on the UX/UI">4</td> 
+    <td title="Great job on the UX/UI">5</td> 
+  </tr>
+</table>
+<hr>
+</div>
+
+

@@ -1,0 +1,35 @@
+<h2>Judges</h2>
+
+<div>
+	<input type="text" placeholder="criteria" ng-model="criteria">
+	<input type="text" placeholder="full name" ng-model="name">
+	<input type="text" placeholder="sample@email.com" ng-model="email">
+	<button type="button" ng-click="addJudge()">Add Judge</button>
+</div>
+<table class="table table-striped">
+  <tr>
+    <th>Criteria</th>
+    <th>Name</th> 
+    <th>Email</th>
+  </tr>
+  <tr ng-repeat="judge in judges">
+    <td>
+    	<h3>
+			{{judge.criteria}}
+		</h3>
+    </td>
+    <td>
+    	<h3>
+			{{judge.name}}
+		</h3>
+    </td> 
+    <td>
+    	<h3>
+			{{judge.email}}
+		</h3>
+    </td>
+  </tr>
+
+</table>
+
+

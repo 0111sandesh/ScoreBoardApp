@@ -1,0 +1,26 @@
+[
+	{
+		"team":"teamA", 
+		"teamData":
+			[
+				{"criteria": "UI/UX", 				"judge": "Judge1", "r1": 0, "c1":"Edit", "r2": 0, "c2":"Edit", "r3": 0, "c3":"Edit", "r4": 0, "c4":"Edit"},
+				{"criteria": "Functionality", 		"judge": "Judge2", "r1": 0, "c1":"Edit", "r2": 0, "c2":"Edit", "r3": 0, "c3":"Edit", "r4": 0, "c4":"Edit"},
+				{"criteria": "Agile Methodology", 	"judge": "Judge3", "r1": 0, "c1":"Edit", "r2": 0, "c2":"Edit", "r3": 0, "c3":"Edit", "r4": 0, "c4":"Edit"},
+				{"criteria": "DevOps", 				"judge": "Judge4", "r1": 0, "c1":"Edit", "r2": 0, "c2":"Edit", "r3": 0, "c3":"Edit", "r4": 0, "c4":"Edit"},
+				{"criteria": "Testing", 			"judge": "Judge5", "r1": 0, "c1":"Edit", "r2": 0, "c2":"Edit", "r3": 0, "c3":"Edit", "r4": 0, "c4":"Edit"},
+				{"criteria": "Business Value", 		"judge": "Judge6", "r1": 0, "c1":"Edit", "r2": 0, "c2":"Edit", "r3": 0, "c3":"Edit", "r4": 0, "c4":"Edit"}
+			]
+	},
+	{
+		"team":"teamB", 
+		"teamData":
+			[
+				{"criteria": "UI/UX", 				"judge": "Judge1", "r1": 0, "c1":"Edit", "r2": 0, "c2":"Edit", "r3": 0, "c3":"Edit", "r4": 0, "c4":"Edit"},
+				{"criteria": "Functionality", 		"judge": "Judge2", "r1": 0, "c1":"Edit", "r2": 0, "c2":"Edit", "r3": 0, "c3":"Edit", "r4": 0, "c4":"Edit"},
+				{"criteria": "Agile Methodology", 	"judge": "Judge3", "r1": 0, "c1":"Edit", "r2": 0, "c2":"Edit", "r3": 0, "c3":"Edit", "r4": 0, "c4":"Edit"},
+				{"criteria": "DevOps", 				"judge": "Judge4", "r1": 0, "c1":"Edit", "r2": 0, "c2":"Edit", "r3": 0, "c3":"Edit", "r4": 0, "c4":"Edit"},
+				{"criteria": "Testing", 			"judge": "Judge5", "r1": 0, "c1":"Edit", "r2": 0, "c2":"Edit", "r3": 0, "c3":"Edit", "r4": 0, "c4":"Edit"},
+				{"criteria": "Business Value", 		"judge": "Judge6", "r1": 0, "c1":"Edit", "r2": 0, "c2":"Edit", "r3": 0, "c3":"Edit", "r4": 0, "c4":"Edit"}
+			]
+	}
+]

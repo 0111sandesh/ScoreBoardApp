@@ -1,0 +1,66 @@
+[
+	{
+		"team":"teamA", 
+		"teamData":
+			[
+				{"criteria": "criteriaA1", "judge": "JudgeA1", "r1": 1, "c1":"c11", "r2": 2, "c2":"c12", "r3": 3, "c3":"c13", "r4": 4, "c4":"c14"},
+				{"criteria": "criteriaA2", "judge": "JudgeA2", "r1": 1, "c1":"c21", "r2": 2, "c2":"c22", "r3": 3, "c3":"c23", "r4": 4, "c4":"c24"},
+				{"criteria": "criteriaA3", "judge": "JudgeA3", "r1": 1, "c1":"c31", "r2": 2, "c2":"c32", "r3": 3, "c3":"c33", "r4": 4, "c4":"c34"}
+			]
+	},
+	{
+		"team":"teamB", 
+		"teamData":
+			[
+				{"criteria": "criteriaB1", "judge": "JudgeB1", "r1": 1, "c1":"c11", "r2": 2, "c2":"c12", "r3": 3, "c3":"c13", "r4": 4, "c4":"c14"},
+				{"criteria": "criteriaB2", "judge": "JudgeB2", "r1": 1, "c1":"c21", "r2": 2, "c2":"c22", "r3": 3, "c3":"c23", "r4": 4, "c4":"c24"},
+				{"criteria": "criteriaB3", "judge": "JudgeB3", "r1": 1, "c1":"c31", "r2": 2, "c2":"c32", "r3": 3, "c3":"c33", "r4": 4, "c4":"c34"}
+			]
+	},
+]
+
+
+
+[
+	{
+		"team":"teamA", 
+		"teamData":
+			[
+				{"criteria": "criteriaA1", "judge": "JudgeA1", "scores": [	{"r1": 1, "comment": "A11"},
+																			{"r2": 2, "comment": "A12"}, 
+																			{"r3": 3, "comment": "A13"}, 
+																			{"r4": 4, "comment": "A14"}
+																		]},
+				{"criteria": "criteriaA2", "judge": "JudgeA2", "scores": [	{"r1": 4, "comment": "A21"}, 
+																			{"r2": 3, "comment": "A22"}, 
+																			{"r3": 2, "comment": "A23"}, 
+																			{"r4": 1, "comment": "A24"}
+																		]},
+				{"criteria": "criteriaA3", "judge": "JudgeA3", "scores": [	{"r1": 1, "comment": "A31"},
+																			{"r2": 2, "comment": "A32"}, 
+																			{"r3": 3, "comment": "A33"}, 
+																			{"r4": 4, "comment": "A34"}
+																		]}
+			]
+	},
+	{
+		"team":"teamB", 
+		"teamData":
+			[
+				{"criteria": "criteriaB1", "judge": "JudgeB1", "scores": [	{"r1": 1, "comment": "B11"},
+																			{"r2": 2, "comment": "B12"}, 
+																			{"r3": 3, "comment": "B13"}, 
+																			{"r4": 4, "comment": "B14"}
+																		]},
+				{"criteria": "criteriaB2", "judge": "JudgeB2", "scores": [	{"r1": 4, "comment": "B21"}, 
+																			{"r2": 3, "comment": "B22"}, 
+																			{"r3": 2, "comment": "B23"}, 
+																			{"r4": 1, "comment": "B24"}
+																		]},
+				{"criteria": "criteriaB3", "judge": "JudgeB3", "scores": [	{"r1": 1, "comment": "B31"},
+																			{"r2": 2, "comment": "B32"}, 
+																			{"r3": 3, "comment": "B33"}, 
+																			{"r4": 4, "comment": "B34"}
+																		]}
+			]
+	}

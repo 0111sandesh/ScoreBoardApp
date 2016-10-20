@@ -1,0 +1,175 @@
+
+<h2>Scoreboard for Part 1</h2>
+<hr>
+
+<div ng-repeat="scoreObject in scoreBoard1 | orderBy:'team'">
+<table class="table table-striped" border="2">
+  <tr>
+    <th colspan="6" bgcolor="#078DB8"><center>{{scoreObject.team}}</center></th>
+  </tr>
+  <tr>
+    <th>Criteria</th> 
+    <th>Round1</th> 
+    <th>Round2</th>
+    <th>Round3</th> 
+    <th>Final</th>
+    <th>Total</th>
+  </tr>
+  <tr ng-repeat="scoreData in scoreObject.teamData">
+    <td>{{scoreData.criteria}} <br>&nbsp;&nbsp;&nbsp;{{scoreData.judge}}</td>
+    <td>    
+      <div>
+        <!-- Trigger the modal with a button -->
+        <button id="scoreVal{{$parent.$index}}{{$index}}1" type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal{{$parent.$index}}{{$index}}1" title="{{scoreData.c1}}" style="width:50px">
+        {{scoreData.r1}}
+        </button> 
+
+        <!-- Modal -->
+        <div class="modal fade" id="myModal{{$parent.$index}}{{$index}}1" role="dialog">
+          <div class="modal-dialog">
+          
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Score</h4>
+              </div>
+              <div class="modal-body">
+                  <p>Few notes about the judging criteria : {{scoreData.criteria}}</p>
+                  <div>
+                    <input type="text" name="score" id="score{{$parent.$index}}{{$index}}1" placeholder="Score">
+                    <textarea rows="4" cols="50" placeholder="Comment" id="comment{{$parent.$index}}{{$index}}1"></textarea>
+                  </div>
+                
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal" 
+                  ng-click="changeVal($parent.$index,$index,1, scoreObject.team, scoreData.criteria)">Save</button>
+              </div>
+            </div>
+            
+          </div>
+        </div>  
+      </div>
+    </td> 
+    <td>
+      <div>
+        <!-- Trigger the modal with a button -->
+        <button id="scoreVal{{$parent.$index}}{{$index}}2" type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal{{$parent.$index}}{{$index}}2" title="{{scoreData.c2}}" style="width:50px">
+        {{scoreData.r2}}
+        </button> 
+
+        <!-- Modal -->
+        <div class="modal fade" id="myModal{{$parent.$index}}{{$index}}2" role="dialog">
+          <div class="modal-dialog">
+          
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Score</h4>
+              </div>
+              <div class="modal-body">
+                  <p>Few notes about the judging criteria : {{scoreData.criteria}}</p>
+                  <div>
+                    <input type="text" name="score" id="score{{$parent.$index}}{{$index}}2" placeholder="Score">
+                    <textarea rows="4" cols="50" placeholder="Comment" id="comment{{$parent.$index}}{{$index}}2"></textarea>
+                  </div>
+                
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal" 
+                ng-click="changeVal($parent.$index,$index,2, scoreObject.team, scoreData.criteria)">Save</button>
+              </div>
+            </div>
+            
+          </div>
+        </div>  
+      </div>
+    </td> 
+    <td>
+      <div>
+        <!-- Trigger the modal with a button -->
+        <button id="scoreVal{{$parent.$index}}{{$index}}3" type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal{{$parent.$index}}{{$index}}3" title="{{scoreData.c3}}" style="width:50px">
+        {{scoreData.r3}}
+        </button> 
+
+        <!-- Modal -->
+        <div class="modal fade" id="myModal{{$parent.$index}}{{$index}}3" role="dialog">
+          <div class="modal-dialog">
+          
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Score</h4>
+              </div>
+              <div class="modal-body">
+                  <p>Few notes about the judging criteria : {{scoreData.criteria}}</p>
+                  <div>
+                    <input type="text" name="score" id="score{{$parent.$index}}{{$index}}3" placeholder="Score">
+                    <textarea rows="4" cols="50" placeholder="Comment" id="comment{{$parent.$index}}{{$index}}3"></textarea>
+                  </div>
+                
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal" 
+                ng-click="changeVal($parent.$index,$index,3, scoreObject.team, scoreData.criteria)">Save</button>
+              </div>
+            </div>
+            
+          </div>
+        </div>  
+      </div>
+    </td> 
+    <td>
+      <div>
+        <!-- Trigger the modal with a button -->
+        <button id="scoreVal{{$parent.$index}}{{$index}}4" type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal{{$parent.$index}}{{$index}}4" title="{{scoreData.c4}}" style="width:50px">
+        {{scoreData.r4}}
+        </button> 
+
+        <!-- Modal -->
+        <div class="modal fade" id="myModal{{$parent.$index}}{{$index}}4" role="dialog">
+          <div class="modal-dialog">
+          
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Score</h4>
+              </div>
+              <div class="modal-body">
+                  <p>Few notes about the judging criteria : {{scoreData.criteria}}</p>
+                  <div>
+                    <input type="text" name="score" id="score{{$parent.$index}}{{$index}}4" placeholder="Score">
+                    <textarea rows="4" cols="50" placeholder="Comment" id="comment{{$parent.$index}}{{$index}}4"></textarea>
+                  </div>
+                
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal" 
+                ng-click="changeVal($parent.$index,$index,4, scoreObject.team, scoreData.criteria)">Save</button>
+              </div>
+            </div>
+            
+          </div>
+        </div>  
+      </div>
+    </td>
+    <td>
+      <div>
+        <!-- Trigger the modal with a button -->
+        <button id="scoreVal{{$parent.$index}}{{$index}}5" type="button" class="btn btn-info btn-lg" title="No Comments" style="width:50px">
+        {{scoreData.r1*1 + scoreData.r2*1 + scoreData.r3*1 + scoreData.r4*1}}
+        </button> 
+
+         
+      </div>
+    </td>
+  </tr>
+</table>
+<hr>
+</div>
+
+
