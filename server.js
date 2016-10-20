@@ -223,6 +223,6 @@ app.post('/scoreboard1/update', function(req, res, next){
 
 
 
-app.listen(3000, function () {
-	console.log('Example app listening on port 3000!');
+app.listen(9000, function () {
+	console.log('Example app listening on port 9000!');
 });
